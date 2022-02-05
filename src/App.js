@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// Step 1: Import dependencies
+import "./App.css";
+import { Header } from "./components/header";
 
-function App() {
+// Step 2: Declare component as a function/class
+const App = (props) => {
+  // react components always have to return JSX (HTML)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header firstName="Bob Smith" title="My Life in React" />
     </div>
   );
-}
+};
 
+// Step 3: export component
 export default App;
